@@ -1,0 +1,106 @@
+body {
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(180deg, #f4f4f4, #e9ecef);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .logo {
+      width: 140px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    h2 {
+      margin: 10px 0;
+      color: #222;
+      font-size: 1.4rem;
+    }
+    .desc {
+      color: #555;
+      font-style: italic;
+      margin-bottom: 30px;
+      font-size: 0.95rem;
+    }
+    .link-btn {
+      display: block;
+      margin: 15px auto;
+      padding: 18px;
+      width: 100%;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #007bff, #0056b3);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: fadeInUp 0.8s ease-in-out forwards;
+      opacity: 0;
+    }
+    .link-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #0056b3, #004080);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+    .disabled {
+      background: gray;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+    body {
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      height: 250vh;                 
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .logo-img {
+      width: 200px;            
+      height: auto;       
+      transform: rotate(0deg);
+      background-image: center;   
+      }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .link-btn:nth-child(1) { animation-delay: 0.3s; }
+    .link-btn:nth-child(2) { animation-delay: 0.5s; }
+    .link-btn:nth-child(3) { animation-delay: 0.7s; }
+    .link-btn:nth-child(4) { animation-delay: 0.9s; }
+    .link-btn:nth-child(5) { animation-delay: 1.1s; }
+    .link-btn:nth-child(6) { animation-delay: 1.3s; }
+    .link-btn:nth-child(7) { animation-delay: 1.5s; }
+    .link-btn:nth-child(8) { animation-delay: 1.7s; }
+    .link-btn:nth-child(9) { animation-delay: 1.9s; }
+    .link-btn:nth-child(10) { animation-delay: 2.1s; }
+    .link-btn:nth-child(11) { animation-delay: 2.3s; }
